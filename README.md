@@ -1,37 +1,39 @@
-# Rain-Prediction-In-Australia-ML-Project
-## Project Overview
-This project applies machine learning techniques to predict whether it will rain the next day based on historical weather data from the Australian Government's Bureau of Meteorology. The dataset is preprocessed, and multiple classification models are trained and evaluated.
+# 🌧️ Rain Prediction in Australia - Machine Learning Project
 
-## Dataset
-The dataset contains weather-related features, such as:
-- **Temperature**: Maximum and minimum daily temperatures  
-- **Humidity**: Morning and afternoon humidity levels  
-- **Wind Speed**: Various wind speed measurements  
-- **Pressure**: Atmospheric pressure readings  
-- **Rainfall**: Rainfall amount recorded  
-- **RainToday**: Indicator of whether it rained today  
-- **RainTomorrow**: Target variable (1 = rain, 0 = no rain)  
+## 📌 Project Overview
+This project applies machine learning techniques to predict whether it will rain tomorrow, using historical weather data from the Australian Government’s Bureau of Meteorology. It is a binary classification task with multiple models implemented and evaluated.
 
-## Project Workflow
-1. **Data Preprocessing**
-   - Handle missing values.
-   - Perform feature engineering and selection.
-   - Normalize and standardize numerical features.
+## 📊 Dataset Features
+The dataset contains weather-related features including:
+- **Temperature**: Maximum and minimum daily temperatures
+- **Humidity**: Morning and afternoon humidity levels
+- **Wind Speed**: Recorded at different times of the day
+- **Pressure**: Atmospheric pressure values
+- **Rainfall**: Daily rainfall in mm
+- **RainToday**: Whether it rained today (Yes/No)
+- **RainTomorrow** *(Target)*: Whether it will rain tomorrow (Yes/No)
 
-2. **Model Implementation**
-   - Train and compare the following models:
-     - Linear Regression
-     - K-Nearest Neighbors (KNN)
-     - Decision Trees
-     - Logistic Regression
-     - Support Vector Machine (SVM)
+## 🔄 Project Workflow
 
-3. **Model Evaluation**
-   - Compare models using:
-     - Accuracy Score
-     - Jaccard Index
-     - F1-Score
-     - LogLoss
-     - Mean Absolute Error
-     - Mean Squared Error
-     - R2-Score
+### 1. Data Preprocessing
+- Handled missing values using imputation techniques.
+- Performed feature engineering and selection.
+- Normalized and standardized numerical features for model compatibility.
+
+### 2. Model Implementation
+Trained and compared the performance of several classification models:
+- **Linear Regression**
+- **K-Nearest Neighbors (KNN)**
+- **Decision Trees**
+- **Logistic Regression**
+- **Support Vector Machine (SVM)**
+
+### 3. Model Evaluation
+Model performance was assessed using the following metrics:
+- **Accuracy Score**
+- **Jaccard Index**
+- **F1-Score**
+- **LogLoss**
+- **Mean Absolute Error (MAE)**
+- **Mean Squared Error (MSE)**
+- **R² Score**
